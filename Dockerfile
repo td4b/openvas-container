@@ -157,4 +157,4 @@ RUN ldconfig && \
 
 COPY scripts/* /
 
-CMD '/start.sh'
+ENTRYPOINT ["sh", "/start.sh"]
