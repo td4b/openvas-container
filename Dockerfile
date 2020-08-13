@@ -157,6 +157,6 @@ RUN ldconfig && \
 
 COPY scripts/* /
 
-RUN chmod +x start.sh
+RUN chmod +x start.sh && chmod +x cert-data-sync.sh && chmod +x reportFix.sh && chmod +x scap-data-sync.sh
 
 CMD '/start.sh'
