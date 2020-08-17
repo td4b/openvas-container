@@ -143,6 +143,8 @@ RUN pip3 install gvm-tools==$gvm_tools_version && \
 
 COPY sshd_config /sshd_config
 
+RUN chmod +x scripts/*.sh
+
 COPY scripts/* /
 
 CMD '/start.sh'
