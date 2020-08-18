@@ -14,7 +14,7 @@ with Gmp(connection, transform=transform) as gmp:
     pretty_print(version)
 
     # Login
-    gmp.authenticate('foo', 'bar')
+    gmp.authenticate('admin', 'admin')
 
     # Retrieve all tasks
     tasks = gmp.get_tasks()
